@@ -41,3 +41,13 @@ abs(); // 返回NaN
 arguments函数内部数组
 world(a, b, ...rest)
 rest剩余函数
+
+1.6 10:04
+JavaScript的函数定义有个特点，它会先扫描整个函数体的语句，把所有申明的变量“提升”到函数顶部：
+'use strict';
+function foo() {
+    var x = 'Hello, ' + y;
+    alert(x);
+    var y = 'Bob';
+}
+foo();//不会报错
