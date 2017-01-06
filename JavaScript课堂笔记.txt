@@ -58,3 +58,7 @@ window.XX函数作用于全局，相当于XX函数
 name.XX函数相当于自己定义了一个函数，并且相比于直接定义XX函数，这样做会减少之后调用时的冲突
 var X变量仅声明于函数内部在函数外部不起作用，但在全局函数内部var X变量在函数外部起作用
 let X变量声明于全局函数内部时在外部不起作用
+
+1.6 10:31
+This是JavaScript内一个巨大的设计错误，需要apply（或call）指定this的指向
+getAge.apply(xiaoming, []); // 25, this指向xiaoming, 参数为空
