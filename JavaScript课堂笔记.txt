@@ -66,3 +66,6 @@ getAge.apply(xiaoming, []); // 25, this指向xiaoming, 参数为空
 1.6 14：28
 sort()方法默认把所有元素先转换为String再排序
 sort()方法会直接对Array进行修改
+
+1.6 16:03
+JavaScript的月份范围用整数表示是0~11，0表示一月，1表示二月，所以要表示6月，我们传入的是5！
