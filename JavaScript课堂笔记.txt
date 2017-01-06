@@ -62,3 +62,7 @@ let X变量声明于全局函数内部时在外部不起作用
 1.6 10:31
 This是JavaScript内一个巨大的设计错误，需要apply（或call）指定this的指向
 getAge.apply(xiaoming, []); // 25, this指向xiaoming, 参数为空
+
+1.6 14：28
+sort()方法默认把所有元素先转换为String再排序
+sort()方法会直接对Array进行修改
